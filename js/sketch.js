@@ -12,8 +12,10 @@ function preload(){
 }
 
 function setup() {
+    rectMode(CENTER)
     var canvas = createCanvas(window.innerWidth, window.innerHeight);
     canvas.parent("p5container");
+
     var mySong=new Audio("assets/spaceSongForDAT443.mp3")
     play = false;
     button = createButton("Play");
@@ -36,8 +38,10 @@ function setup() {
         })
     }
 }
+
+
 function draw() {
-   console.log(play)
+   //console.log(play)
    image(img,0,0,width,height);
 
    //planets
